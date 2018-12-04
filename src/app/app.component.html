@@ -1,15 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title  + " " + topic }}!
-  </h1>
-  <p>
-    Score is: {{ score1 + score2 }}
-  </p>
- <hr>
- Grand Parent Component:
- <app-grand-parent></app-grand-parent>
- <hr>
- <u>Task Manager App</u>  
- <app-task-manager></app-task-manager>
+<a routerLink="/family">Family</a> &nbsp;
+<a routerLink="/task">Task</a>
+
+<br>
+
+<router-outlet></router-outlet>
 
