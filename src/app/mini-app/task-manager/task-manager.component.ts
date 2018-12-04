@@ -15,6 +15,8 @@ export class TaskManagerComponent implements OnInit {
 
   friends = ["Nanu", "Zanu", "Kanu", "Manu", "Tanu", "Aanu"]
 
+  score = [ 25, 5, 1, 0, 88, 55, 44, 4]
+
   myDate = new Date()
 
   myTasks= [

@@ -23,8 +23,10 @@ Date Pipe: {{  myDate | date:'h:mm' }}
 <br>
 UnSorted Friends: {{  friends  }}
 <br>
-Sorted Friends: {{ friends | stringSortPipe }}
-
-
+Sorted Friends: {{ friends | stringSortPipe:'dsc' }}
+<br>
+UnSorted Score: {{score}}
+<br>
+Sorted Score: {{ score | numberSortPipe:'dsc' }}
 
 

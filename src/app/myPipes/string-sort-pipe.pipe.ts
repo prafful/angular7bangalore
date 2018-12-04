@@ -6,6 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class StringSortPipePipe implements PipeTransform {
 
   transform(value: any, args?: any): any {
+  
     if(args == 'asc'){
       return value.sort();
     } else if(args == 'dsc'){
