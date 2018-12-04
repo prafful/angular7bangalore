@@ -9,7 +9,13 @@ export class TaskManagerComponent implements OnInit {
 
   counter = 0
 
+  salary = 88
+
   oneTask = ""
+
+  friends = ["Nanu", "Zanu", "Kanu", "Manu", "Tanu", "Aanu"]
+
+  myDate = new Date()
 
   myTasks= [
           'Go an get some mango lassi',
