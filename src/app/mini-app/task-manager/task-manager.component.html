@@ -1,0 +1,17 @@
+<br>
+Task: 
+<input type="text" [(ngModel)]='oneTask' placeholder="Add your task....">
+<button (click)="sayHello()">Add Task</button>{{oneTask}}
+<br>
+Pending: 
+<ol>
+  <li *ngFor="let task of myTasks; let ct = index">
+    {{task}} at {{ct}} position!
+    &nbsp;
+    <button (click)="taskDone(ct)">Done</button> 
+
+  </li>
+ 
+</ol>
+
+Completed:
