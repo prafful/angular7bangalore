@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ConsumeRemoteDataComponent } from './consume-remote-data.component';
+import { UsersAPIComponentComponent } from './users-apicomponent.component';
 
-describe('ConsumeRemoteDataComponent', () => {
-  let component: ConsumeRemoteDataComponent;
-  let fixture: ComponentFixture<ConsumeRemoteDataComponent>;
+describe('UsersAPIComponentComponent', () => {
+  let component: UsersAPIComponentComponent;
+  let fixture: ComponentFixture<UsersAPIComponentComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ConsumeRemoteDataComponent ]
+      declarations: [ UsersAPIComponentComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ConsumeRemoteDataComponent);
+    fixture = TestBed.createComponent(UsersAPIComponentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -4,8 +4,6 @@ import { FormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
 import { HttpClientModule } from "@angular/common/http";
 
-
-
 import { AppComponent } from './app.component';
 import { GrandParentComponent } from './family/grand-parent/grand-parent.component';
 import { FatherComponent } from './family/father/father.component';
@@ -16,7 +14,7 @@ import { StringSortPipePipe } from './myPipes/string-sort-pipe.pipe';
 import { NumberSortPipePipe } from './myPipes/number-sort-pipe.pipe';
 import { ConsumeLocalService1Component } from './consumeService/consume-local-service1/consume-local-service1.component';
 import { ConsumeLocalService2Component } from './consumeService/consume-local-service2/consume-local-service2.component';
-import { ConsumeRemoteDataComponent } from './remote/consume-remote-data/consume-remote-data.component';
+import { UsersAPIComponentComponent } from './remote/users-apicomponent/users-apicomponent.component';
 
 
 @NgModule({
@@ -31,8 +29,7 @@ import { ConsumeRemoteDataComponent } from './remote/consume-remote-data/consume
     NumberSortPipePipe,
     ConsumeLocalService1Component,
     ConsumeLocalService2Component,
-    ConsumeRemoteDataComponent
-   
+    UsersAPIComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -77,7 +74,7 @@ import { ConsumeRemoteDataComponent } from './remote/consume-remote-data/consume
                       },
                       {
                         path:'remoteData',
-                        component:ConsumeRemoteDataComponent
+                        component:UsersAPIComponentComponent
                       },
                       {
                         path:'**',

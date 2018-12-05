@@ -20,9 +20,6 @@ export class LocalService1Service {
     console.log("Service 1 function is called!!!!");
   }
 
-  getRemoteData(){
-    return this.http.get("https://jsonplaceholder.typicode.com/users")
-  }
-
+ 
 
 }
