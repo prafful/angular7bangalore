@@ -1,6 +1,10 @@
 <p>
   users-apicomponent works!
 </p>
+Real Time Search: 
+<input type="text" [(ngModel)]="searchString" autofocus> {{searchString}}
+<br>
+<br>
 
 <table border="1">
   <thead>
@@ -12,7 +16,7 @@
     </tr>
   </thead>
 <tbody>
-  <tr *ngFor="let user of allUsers">
+  <tr *ngFor="let user of allUsers | autoSearchPipe:searchString">
     <td>{{user.id}}</td>
     <td>{{user.name}}</td>
     <td>{{user.email}}</td>
@@ -20,3 +24,7 @@
   </tr>
 </tbody>
 </table>
+
+<br>
+<br>
+<button (click)="postUser()">Create</button>

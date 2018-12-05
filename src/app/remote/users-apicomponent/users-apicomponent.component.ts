@@ -23,4 +23,27 @@ export class UsersAPIComponentComponent implements OnInit {
     })
   }
 
+  user= {
+    "name":"Prafful",
+    "email":"prraful@gmail.com",
+    "address":{
+      "geo":{
+        "lat":"88.88",
+        "lng":"88.88"
+      }
+    }
+  }
+
+  postUser(){
+    this.userService.createUser(this.user).subscribe((response) => {
+      console.log(response);
+      this.userService.getRemoteUsers().subscribe((response)=>{
+        this.allUsers = response
+      })
+      
+    })
+
+    
+  }
+
 }

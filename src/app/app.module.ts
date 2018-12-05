@@ -15,6 +15,7 @@ import { NumberSortPipePipe } from './myPipes/number-sort-pipe.pipe';
 import { ConsumeLocalService1Component } from './consumeService/consume-local-service1/consume-local-service1.component';
 import { ConsumeLocalService2Component } from './consumeService/consume-local-service2/consume-local-service2.component';
 import { UsersAPIComponentComponent } from './remote/users-apicomponent/users-apicomponent.component';
+import { AutoSearchPipePipe } from './myPipes/auto-search-pipe.pipe';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { UsersAPIComponentComponent } from './remote/users-apicomponent/users-ap
     NumberSortPipePipe,
     ConsumeLocalService1Component,
     ConsumeLocalService2Component,
-    UsersAPIComponentComponent
+    UsersAPIComponentComponent,
+    AutoSearchPipePipe
   ],
   imports: [
     BrowserModule,
