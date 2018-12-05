@@ -21,6 +21,8 @@ Real Time Search:
     <td>{{user.name}}</td>
     <td>{{user.email}}</td>
     <td>{{user.address.geo.lat + ", " + user.address.geo.lng}}</td>
+    <td><button (click)="removeUser(user.id)">Delete</button></td>
+    <td><button (click)="viewDetail(user.id)"  >Detail</button></td>
   </tr>
 </tbody>
 </table>
