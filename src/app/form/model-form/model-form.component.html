@@ -1,0 +1,17 @@
+<p>
+  model-form works!
+</p>
+
+<form [formGroup]="modelForm" (ngSubmit)="modelFormUser(modelForm.value)">
+  
+  Name: <input type="text" formControlName="name"><br><br>
+  Email: <input type="text" formControlName="email"><br><br>
+  Hobby:<select formControlName="hobby">
+            <option value="dancing">Dancing</option>
+            <option value="swimming">Swimming</option>
+            <option value="driving">Driving</option>
+        </select>
+ <br><br>
+ <button type="submit" [disabled]="!modelForm.valid">Add</button>
+ {{ modelForm.valid }}
+</form>
