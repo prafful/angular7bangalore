@@ -5,6 +5,7 @@ import { RouterModule } from "@angular/router";
 import { HttpClientModule } from "@angular/common/http";
 import { ReactiveFormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+//import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 import { AppComponent } from './app.component';
 import { GrandParentComponent } from './family/grand-parent/grand-parent.component';
@@ -49,6 +50,7 @@ import { AnimationComponent } from './animation/animation/animation.component';
     HttpClientModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+   // NgbModule.forRoot(),
     RouterModule.forRoot([
                       {
                         path:'',
